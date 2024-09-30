@@ -25,7 +25,6 @@ function broadcastIdeas() {
 }
 
 wss.on("connection", (ws) => {
-  //  console.log('New client connected');
   ws.send(JSON.stringify(ideas));
 
   ws.on("message", (message) => {
@@ -35,8 +34,4 @@ wss.on("connection", (ws) => {
       broadcastIdeas(); //update all the clients in the new idea
     }
   });
-
-  //   ws.on('close', () => {
-  //       console.log('Client disconnected');
-  //   });
 });
