@@ -16,7 +16,7 @@
 
 1. שכפל/י את הפרויקט למחשב שלך:  
    ```bash
-   git clone <URL של הפרויקט>
+   git clone https://github.com/miryamaximov/WSS.git
    cd WSS
    ```
 
